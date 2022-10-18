@@ -1,0 +1,46 @@
+@use '../custom' as *;
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem 1rem 1.0625rem;
+    background-color: $yellow;
+    font-family: $font-montserrat;
+
+    a {
+        color: $black;
+
+        &:hover {
+            color: $black;
+        }
+    }
+    p {
+        font-weight: 700;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+
+        span {
+            font-weight: 900;
+            font-size: 1.25rem;
+        }
+    }
+
+    &--points {
+        padding: 0.5rem 1rem;
+        background-color: $black;
+        border-radius: 99px;
+        font-family: $font-quicksand;
+        color: $white;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+
+        span:first-child {
+            font-weight: 500;
+        }
+
+        span:last-child {
+            font-weight: 700;
+        }
+    }
+}

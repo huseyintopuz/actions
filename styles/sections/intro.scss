@@ -1,0 +1,115 @@
+@use '../custom' as *;
+
+.container {
+    margin: 0 !important;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    background-color: $yellow;
+    padding: 21px 0 15px;
+
+    .entrance {
+        height: 844px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &--title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: $font-montserrat;
+
+        p {
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            font-size: 2rem;
+            line-height: 39px;
+
+            span {
+                font-weight: 900;
+                font-size: 2rem;
+            }
+        }
+
+        span {
+            display: block;
+            text-align: center;
+            font-weight: 400;
+            font-size: 0.875rem;
+            line-height: 17.07px;
+        }
+    }
+
+    &--cover {
+        display: contents;
+    }
+
+    &--welcome {
+        .wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            background-color: $white;
+            border-radius: 1rem;
+            font-family: $font-quicksand;
+
+            @include media-breakpoint-up(xxs) {
+                padding: 0.7rem;
+            }
+
+            @include media-breakpoint-up(sm) {
+                padding: 1rem;
+            }
+
+            .app {
+
+                h5 {
+                    text-align: center;
+                    padding-bottom: 1rem;
+                    font-weight: 700;
+                    font-size: 1.25rem;
+                    line-height: 1.75rem;
+                }
+
+                p {
+                    text-align: center;
+                    font-weight: 500;
+                    font-size: 0.875rem;
+                    line-height: 1.25rem;
+                }
+            }
+
+            .start {
+                display: flex;
+                align-items: center;
+
+                button {
+
+
+                    background-color: $black;
+                    border-radius: 99px;
+                    color: $white;
+                    font-weight: 700;
+                    font-size: 0.875rem;
+                    line-height: 1.25rem;
+
+                    @include media-breakpoint-up(xxs) {
+                        padding: 1rem 5.5rem;
+                    }
+
+                    @include media-breakpoint-up(sm) {
+                        padding: 1.125rem 9.09rem;
+                    }
+                }
+            }
+        }
+    }
+}

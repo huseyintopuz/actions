@@ -1,0 +1,45 @@
+@use 'custom';
+
+@use '../styles/sections/intro';
+@use '../styles/sections/home';
+@use '../styles/components/testcaseheader';
+@use '../styles/components/earnpoints';
+@use '../styles/components/actionview';
+@use '../styles/components/actioncongrat';
+@use '../styles/components/congrats';
+@use '../styles//components/mypoints';
+@use '../styles//components/button';
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+
+}
+
+ul,li, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+

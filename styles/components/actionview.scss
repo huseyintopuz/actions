@@ -1,0 +1,24 @@
+@use '../custom' as *;
+
+.actionview {
+    position: relative;
+    height: 844px;
+    background-color: $yellow;
+
+    .earn {
+        display: flex;
+        align-items: center;
+
+        @include media-breakpoint-up(xxs) {
+            justify-content: flex-start;
+        }
+
+        @include media-breakpoint-up(sm) {
+            justify-content: center;
+        }
+
+        @include media-breakpoint-down(sm) {
+            justify-content: center;
+        }
+    }
+}

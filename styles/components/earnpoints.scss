@@ -1,0 +1,46 @@
+@use '../custom' as *;
+
+.earnpoints {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: $white;
+    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 1rem;
+    padding: 1rem 0;
+    position: absolute;
+    top: 30%;
+
+    .cart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .point {
+            padding: 1rem 0;
+            font-family: $font-montserrat;
+            font-weight: 700;
+            font-size: 0.875rem;
+            line-height: 0.125rem;
+            color: $green;
+        }
+
+        h5 {
+            padding-bottom: 1rem;
+            font-family: $font-quicksand;
+            font-weight: 700;
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+        }
+
+        p {
+            font-family: $font-quicksand;
+            font-weight: 500;
+            font-size: 1.125rem;
+            line-height: 1.25rem;
+            text-align: center;
+        }
+    }
+}

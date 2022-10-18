@@ -1,0 +1,50 @@
+@use '../custom' as *;
+
+
+.mypoints {
+    background-color: $white-smoke;
+    height: 840px;
+    padding: 1.5rem 1rem 1.5rem;
+
+    &--completed {
+        font-family: $font-quicksand;
+
+        @include media-breakpoint-up(xxs) {
+            padding: 0;
+        }
+
+        h4 {
+            font-weight: 700;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            padding-bottom: 1rem;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+
+            li {
+                display: flex;
+                justify-content: space-between;
+                background-color: $white;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+                padding: 1rem 1.5rem;
+
+                span:first-child {
+                    font-weight: 500;
+                    font-size: 0.875rem;
+                    line-height: 1.25rem;
+                }
+
+                span:last-child {
+                    font-weight: 700;
+                    font-size: 0.875rem;
+                    line-height: 1.125rem;
+                    color: $green;
+                }
+            }
+        }
+    }
+}

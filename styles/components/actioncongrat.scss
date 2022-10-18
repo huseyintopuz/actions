@@ -1,0 +1,13 @@
+@use '../custom' as *;
+
+.actioncongrat {
+    position: relative;
+    height: 844px;
+    background-color: $yellow;
+
+    .close {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

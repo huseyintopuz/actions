@@ -1,0 +1,27 @@
+// COLORS
+
+$yellow: #FFCC33;
+$white: #FFFFFF;
+$white-smoke: #F5F5F5;
+$black: #000000;
+$green: #00CC00;
+$grey-dark: #999999;
+
+// FONTS
+
+$font-montserrat: 'Montserrat';
+$font-quicksand: 'Quicksand';
+
+$grid-breakpoints: (
+  xs: 0,
+  xxs: 280px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+

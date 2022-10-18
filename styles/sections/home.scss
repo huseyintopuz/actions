@@ -1,0 +1,96 @@
+@use '../custom' as *;
+
+.home {
+
+    &--actions {
+        font-family: $font-quicksand;
+        background-color: $white-smoke;
+
+        @include media-breakpoint-up(xxs) {
+            padding: 1.5rem 0 1.5rem 0.7rem ;
+        }
+
+        @include media-breakpoint-up(sm) {
+            padding: 1.5rem 1rem;
+        }
+
+        h4 {
+            font-weight: 700;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            padding-bottom: 1rem;
+        }
+
+        ul {
+            @include media-breakpoint-up(xxs) {
+                padding-right: 0;
+            }
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin: 0 !important;
+
+            li {
+                @include media-breakpoint-up(xxs) {
+                    padding: 0;
+                }
+                a {
+                    display: flex;
+                    background-color: $white;
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+                    border-radius: 1rem;
+
+                    @include media-breakpoint-up(xxs) {
+                        padding: 0.5rem;
+                    }
+                    
+                    @include media-breakpoint-up(sm) {
+                        padding: 1rem;
+                    }
+                    .image {
+                        @include media-breakpoint-up(xxs) {
+                            padding: 0;
+                        }
+                    }
+
+                    .info {
+                        padding-left: 1rem;
+                        width: 100%;
+
+                        @include media-breakpoint-down(xxs) {
+                            padding-left: 0.5rem;
+                            padding-right: 0;
+                        }
+
+                        div {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+
+                            h5 {
+                                font-weight: 700;
+                                font-size: 0.875rem;
+                                line-height: 1.25rem;
+                            }
+
+                            span {
+                                font-family: $font-montserrat;
+                                font-weight: 700;
+                                font-size: 0.875rem;
+                                line-height: 1.125rem;
+                                color: $green;
+                            }
+                        }
+
+                        p {
+                            font-weight: 500;
+                            font-size: 0.875rem;
+                            line-height: 1rem;
+                            color: $grey-dark;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
