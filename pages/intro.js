@@ -1,17 +1,21 @@
-import React, { useState, useEffect } from 'react';
+import React, { useContext, useLayoutEffect } from 'react';
+import { AuthContext } from '../context/auth-context';
 import Image from 'next/image';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
 import cover from '../public/cover.jpg';
 
 const Intro = () => {
     const router = useRouter();
+    const authContext = useContext(AuthContext);
+
+    useLayoutEffect(() => {
+        authContext?.isUserAuthenticated
+        ? router.push('/')
+        : router.push('/intro')
+    }, []);
 
     const handleClick = () => {
-        if(router.asPath == '/intro') {
-            router.push('/')
-            localStorage.setItem('introDisabled', true)
-        }
+        router.push('/')
     }
 
     return (
