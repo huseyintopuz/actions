@@ -3,5 +3,8 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
-  "/intro": "pages/intro.js"
+  "/intro": "pages/intro.js",
+  "/[action]/view": "pages/[action]/view.js",
+  "/[action]/congratulations": "pages/[action]/congratulations.js",
+  "/mypoints": "pages/mypoints.js"
 }

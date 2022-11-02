@@ -7,7 +7,7 @@ const TestcaseHeader = () => {
   const { total } = useSelector(state => state.actions);
 
   return (
-    <header className='container title'>
+    <header className='container-fluid title'>
       <Link href="/">
         <a>
           <p>TestCase<span>&nbsp;APP</span></p>

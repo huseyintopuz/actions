@@ -9,7 +9,7 @@ const HomePage = () => {
     const { cartItems } = useSelector(state => state.actions);
 
     return (
-        <div className='home container'>
+        <div className='home container-fluid'>
             <div className='home--actions row'>
                 <h4>Actions to be completed</h4>
                 <ul className='row'>

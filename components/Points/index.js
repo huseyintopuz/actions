@@ -6,7 +6,7 @@ const Points = () => {
     const { cartItems } = useSelector(state => state.actions);
 
     return (
-        <div className='container mypoints'>
+        <div className='container-fluid mypoints'>
             <div className='mypoints--completed'>
                 <h4>Completed actions</h4>
                 <ul>

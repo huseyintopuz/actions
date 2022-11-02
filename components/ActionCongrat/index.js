@@ -3,7 +3,7 @@ import Congrat from '../Congrat';
 
 const ActionCongrat = () => {
     return (
-        <div className='container actioncongrat'>
+        <div className='container-fluid action-congrat'>
             <div className='close'>
                 <Congrat />
             </div>

@@ -1,0 +1,1 @@
+{"c":["pages/[action]/congratulations","webpack"],"r":["pages/[action]/view"],"m":["./components/ActionView/index.js","./components/EarnPoints/index.js","./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?absolutePagePath=%2Fhome%2Fhuseyin%2FActions%2Fpages%2F%5Baction%5D%2Fview.js&page=%2F%5Baction%5D%2Fview!","./pages/[action]/view.js"]}

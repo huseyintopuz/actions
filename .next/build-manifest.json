@@ -20,6 +20,16 @@
       "static/chunks/main.js",
       "static/chunks/pages/index.js"
     ],
+    "/[action]/congratulations": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/[action]/congratulations.js"
+    ],
+    "/[action]/view": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/[action]/view.js"
+    ],
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -34,6 +44,11 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/intro.js"
+    ],
+    "/mypoints": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/mypoints.js"
     ]
   },
   "ampFirstPages": []
